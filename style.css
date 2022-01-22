@@ -1,14 +1,31 @@
+@font-face {
+  font-family: pokemonHollow;
+  src: url("resources/fonts/Pokemon Hollow.ttf");
+}
+
+@font-face {
+  font-family: pokemonSolid;
+  src: url("resources/fonts/Pokemon\ Solid.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   border: none;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #0075be;
+  margin: 5rem 10vw;
+  border: 0.5rem solid #d5a100;
 }
 
 .search-area {
   display: flex;
   justify-content: center;
-  margin-top: 50vh;
+  margin-top: 20vh;
 }
 
 .search-area-bar {
@@ -20,5 +37,15 @@
 .search-area-button {
   width: 404px;
   border: 2px solid black;
-  margin: 0;
+}
+
+.exhibitionArea {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-family: pokemonHollow;
+  font-size: 2rem;
 }
