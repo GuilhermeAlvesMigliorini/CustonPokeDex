@@ -25,18 +25,33 @@
 .search-area {
   display: flex;
   justify-content: center;
-  margin-top: 20vh;
+  text-align: center;
+  margin-top: 10vh;
 }
 
 .search-area-bar {
   display: block;
-  width: 400px;
-  border: 2px solid black;
+  font-size: 1.25rem;
+  padding: 1rem 1rem;
+  text-align: center;
+  font-style: italic;
+  background-color: #6cce7b;
+  outline-color: #0075be;
+  border-radius: 10px;
 }
 
 .search-area-button {
-  width: 404px;
-  border: 2px solid black;
+  font-size: 1.25rem;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  background-color: #ffcc00;
+  box-shadow: 2px 2px 2px 2px #0075be;
+}
+
+.search-area-button:hover {
+  background-color: #d5a100;
+  cursor: pointer;
 }
 
 .exhibitionArea {
@@ -53,6 +68,7 @@
   margin: 0 auto 2rem auto;
   border-radius: 10px;
   border: 0.5rem solid #ffcc00;
+  box-shadow: 2px 2px 2px 2px #0075be;
 }
 
 h2 {
@@ -60,6 +76,5 @@ h2 {
   color: #ffcc00;
   font-size: 2rem;
   text-shadow: 2px 2px #0075be;
-  line-height: 0;
-  margin: 1rem 0 2rem 0;
+  margin: -1rem 0 2rem 0;
 }
