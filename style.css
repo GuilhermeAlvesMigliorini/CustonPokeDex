@@ -17,7 +17,7 @@
 }
 
 .container {
-  background-color: #0075be;
+  background-color: #4dad5b;
   margin: 5rem 10vw;
   border: 0.5rem solid #d5a100;
 }
@@ -46,6 +46,10 @@
 }
 
 h2 {
-  font-family: pokemonHollow;
+  font-family: pokemonSolid;
+  color: #ffcc00;
   font-size: 2rem;
+  text-shadow: 2px 2px #0075be;
+  line-height: 0;
+  margin: 1rem 0 4rem 0;
 }
