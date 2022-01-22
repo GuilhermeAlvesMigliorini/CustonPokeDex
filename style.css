@@ -41,8 +41,18 @@
 
 .exhibitionArea {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
   margin-top: 1rem;
+}
+
+.exhibitionArea img {
+  width: 200px;
+  height: auto;
+  margin: 0 auto 2rem auto;
+  border-radius: 10px;
+  border: 0.5rem solid #ffcc00;
 }
 
 h2 {
@@ -51,5 +61,5 @@ h2 {
   font-size: 2rem;
   text-shadow: 2px 2px #0075be;
   line-height: 0;
-  margin: 1rem 0 4rem 0;
+  margin: 1rem 0 2rem 0;
 }
