@@ -23,8 +23,15 @@ pokeFetch()
  const searchButton = document.querySelector('[sc-search-button]')
 
  searchButton.addEventListener('click', function(){
-   pokeIndentifier = serchAreaBar.value
-   pokeFetch()
+   submitSearch()
+ })
+
+ serchAreaBar.addEventListener('keypress', function(){
+   
+   if(event.keyCode === 13){
+     event.preventDefault()
+     submitSearch()
+   }
  })
 
  function pokeFetch(){
@@ -41,4 +48,9 @@ pokeFetch()
   }
   
    getData()
+ }
+
+ function submitSearch(){
+  pokeIndentifier = serchAreaBar.value
+  pokeFetch()
  }
