@@ -67,6 +67,7 @@
   height: auto;
   margin: 0 auto 2rem auto;
   border-radius: 10px;
+  background-color: #fff;
   border: 0.5rem solid #ffcc00;
   box-shadow: 2px 2px 2px 2px #0075be;
 }
