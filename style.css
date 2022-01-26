@@ -1,3 +1,4 @@
+/* ------------------General-------------------------- */
 @font-face {
   font-family: pokemonHollow;
   src: url("resources/fonts/Pokemon Hollow.ttf");
@@ -22,6 +23,9 @@
   border: 0.5rem solid #d5a100;
 }
 
+/* -------X----------General------------X------------- */
+
+/* ------------------Search-------------------------- */
 .search-area {
   display: flex;
   justify-content: center;
@@ -54,6 +58,10 @@
   cursor: pointer;
 }
 
+/* -------X----------Search------------X------------- */
+
+/* ------------------exhibition-------------------------- */
+
 .exhibitionArea {
   display: flex;
   flex-direction: column;
@@ -72,10 +80,37 @@
   box-shadow: 2px 2px 2px 2px #0075be;
 }
 
-h2 {
+.pokeName {
   font-family: pokemonSolid;
   color: #ffcc00;
   font-size: 2rem;
   text-shadow: 2px 2px #0075be;
   margin: -1rem 0 2rem 0;
 }
+
+.shinyBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0075be;
+}
+
+.shinyBox-normal,
+.shinyBox-shiny {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffcc00;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #0075be;
+}
+
+.shinyBox-normal:hover,
+.shinyBox-shiny:hover {
+  cursor: pointer;
+  background-color: #d5a100;
+}
+
+/* -------X----------exhibition------------X------------- */

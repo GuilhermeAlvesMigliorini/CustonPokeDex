@@ -1,4 +1,5 @@
 const pokeName = document .createElement('h2')
+pokeName.classList.add('pokeName')
 const pokeImage = document.createElement('img')
 const exhibitionArea = document.querySelector('.exhibitionArea')
 let pokeIndentifier = 1
