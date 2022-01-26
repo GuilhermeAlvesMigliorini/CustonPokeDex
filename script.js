@@ -2,7 +2,10 @@ const pokeName = document .createElement('h2')
 pokeName.classList.add('pokeName')
 const pokeImage = document.createElement('img')
 const exhibitionArea = document.querySelector('.exhibitionArea')
+const shinyBoxNormal = document.querySelector('.shinyBox-normal')
+const shinyBoxShiny = document.querySelector('.shinyBox-shiny')
 let pokeIndentifier = 1
+let shiny = false
 
 
 
@@ -15,7 +18,13 @@ pokeFetch()
  }
 
  function pokemonSprite(p){
-  pokeImage.src = p.sprites.front_default
+   if(shiny){
+     pokeImage.src = p.sprites.front_shiny
+   }
+   else{
+    pokeImage.src = p.sprites.front_default
+   }
+  
   exhibitionArea.appendChild(pokeImage)
  }
  
@@ -55,3 +64,17 @@ pokeFetch()
   pokeIndentifier = serchAreaBar.value
   pokeFetch()
  }
+
+ shinyBoxNormal.addEventListener('click', function(){
+   shiny = false
+   if(shiny === true){
+     submitSearch()
+   }
+ })
+
+ shinyBoxShiny.addEventListener('click', function(){
+   shiny = true
+   if(shiny === false){
+    submitSearch()
+  }
+ })
