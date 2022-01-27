@@ -67,14 +67,10 @@ pokeFetch()
 
  shinyBoxNormal.addEventListener('click', function(){
    shiny = false
-   if(shiny === true){
      submitSearch()
-   }
  })
 
  shinyBoxShiny.addEventListener('click', function(){
    shiny = true
-   if(shiny === false){
     submitSearch()
-  }
  })
